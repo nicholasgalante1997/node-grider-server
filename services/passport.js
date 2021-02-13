@@ -23,7 +23,8 @@ passport.deserializeUser((id, done) => {
 const googleConfig = {
     clientID: keys.googleClientID,
     clientSecret: keys.googleClientSecret,
-    callbackURL: '/auth/google/callback'
+    callbackURL: '/auth/google/callback',
+    proxy: true
 };
 
 // second argument of GoogleStrategyConstructor, callback function with preset args
